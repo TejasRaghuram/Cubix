@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LayoutActivity" >
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/layout_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_tabs" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/layout_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        app:tabBackground="@color/main"
+        app:tabIconTint="@color/tab_selector">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/layout_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/layout_home" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/layout_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/layout_timer" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/layout_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/layout_logout" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+</RelativeLayout>

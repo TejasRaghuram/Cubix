@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignupActivity">
+
+    <ImageView
+        android:id="@+id/signup_topline"
+        android:layout_width="750dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/user_line" />
+
+    <ImageView
+        android:id="@+id/signup_bottomline"
+        android:layout_width="750dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/user_line" />
+
+    <LinearLayout
+        android:id="@+id/signup_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/signup_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/extrabold"
+            android:text="Create Account"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/signup_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/extrabold"
+            android:text="Please sign up to continue."
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/user_input"
+            android:ems="10"
+            android:fontFamily="@font/regular"
+            android:hint="EMAIL"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="10dp"
+            android:text=""
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/user_emailicon"
+            android:drawablePadding="10dp" />
+
+        <EditText
+            android:id="@+id/signup_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/user_input"
+            android:ems="10"
+            android:maxLength="12"
+            android:fontFamily="@font/regular"
+            android:hint="NAME"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="10dp"
+            android:text=""
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/user_nameicon"
+            android:drawablePadding="10dp" />
+
+        <EditText
+            android:id="@+id/signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/user_input"
+            android:ems="10"
+            android:fontFamily="@font/regular"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:paddingHorizontal="10dp"
+            android:text=""
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/user_passwordicon"
+            android:drawablePadding="10dp" />
+
+        <Button
+            android:id="@+id/signup_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/user_submit"
+            android:backgroundTint="@color/main"
+            android:fontFamily="@font/medium"
+            android:paddingLeft="20dp"
+            android:paddingTop="0dp"
+            android:text="SIGN UP"
+            android:textSize="18sp"
+            android:drawableRight="@drawable/user_submiticon"
+            android:drawableTint="@color/white" />
+
+        <TextView
+            android:id="@+id/signup_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/semibold"
+            android:gravity="center"
+            android:textColor="#F17268"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/signup_logobody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/signup_logotext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/extrabold"
+                android:gravity="top"
+                android:text="cubix"
+                android:textColor="@color/main"
+                android:textSize="42sp" />
+
+            <ImageView
+                android:id="@+id/signup_logo"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/logo" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signup_loginbody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/signup_bottomline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_body">
+
+        <TextView
+            android:id="@+id/signup_loginprompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semibold"
+            android:text="Already have an account?"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/signup_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/extrabold"
+            android:text="Sign In"
+            android:textColor="@color/main"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
